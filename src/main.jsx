@@ -38,3 +38,7 @@ h1.textContent = 'Hello!'
 h1.classList.add('header');
 
 root.append(h1);
+
+
+// https://www.youtube.com/watch?v=x4rFhThSX04&t=955s
+// 51:14
