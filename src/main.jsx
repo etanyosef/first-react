@@ -1,44 +1,45 @@
-// import { createRoot } from 'react-dom/client';
+import { createRoot } from "react-dom/client";
 
-// const { createElement } = require("react");
+const root = createRoot(document.getElementById('root'))
 
-// const root = createRoot(document.getElementById('root'));
+root.render(
+    <>
+        <Header />
+        <MainContent />
+        <Footer />
+    </>
+)
 
-// function MyNavbar() {
-// 	return (
-// 		<nav>
-// 			<h1>Logo</h1>
-// 			<ul>
-// 				<li>Home</li>
-// 				<li>About</li>
-// 				<li>Contact</li>
-// 			</ul>
-// 		</nav>
-// 	)
-// }
+function Header() {
+    return (
+        <header>
+            <img src="./react-logo.png" alt="React Logo" width="50px" />
+        </header>
+    )
+}
 
-// function MainContent() {
-// 	return (
-// 		<h1>React is great!</h1>
-// 	)
-// }
+function Footer() {
+    return (
+        <footer>
+            <small>
+                &copy; 2026 Sagit development. All rights reserved.
+            </small>
+        </footer>
+    )
+}
 
-// root.render(
-// 	<>
-// 		<MyNavbar />
-// 		<MainContent />	
-// 	</>
-// )
-
-
-const h1 = document.createElement('h1');
-const root = document.getElementById('root');
-
-h1.textContent = 'Hello!'
-h1.classList.add('header');
-
-root.append(h1);
-
+function MainContent() {
+    return (
+        <main>
+            <h1>Reasons I'm excited to learn React</h1>
+            <ol>
+                <li>To learn how to create webpages/apps using React.</li>
+                <li>To be employable.</li>
+                <li>Learning is fun :D</li>
+            </ol>            
+        </main>
+    )
+}
 
 // https://www.youtube.com/watch?v=x4rFhThSX04&t=955s
-// 51:14
+// 1:31:01
